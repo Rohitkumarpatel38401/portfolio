@@ -1,0 +1,98 @@
+:root {
+    
+    --colorPrimary: #E004CD;
+    --colorBlue: #005358;
+    --paraColor: #616161;
+    --colorBlack: #333333a8;
+    --colorWhite: #ffffff80;
+    --ratingColor: #ffc107;
+    --colorYellow: #f2c94c;
+    --gradientColor: rgb(247, 202, 202);
+    --boxShadow: 0px 6px 60px 5px rgba(0, 0, 0, 0.08);
+}
+
+body{
+    /* background: linear-gradient(to left, #701346 0%, #7ab8da 100%); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* height: 100vh !important; */
+    background-color: var(--gradientColor);
+    /* position: relative; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+header{
+    width: 100%;
+    background:var(--colorBlack);
+    box-shadow:var(--boxShadow);
+    position: fixed;
+    top:0px;
+    z-index: 100;
+}
+
+.navbar-nav .nav-item{
+    color:rgb(247, 233, 233) !important;
+    padding:5px 20px !important;
+  }
+  .navbar-nav .nav-item a{
+    color:rgb(247, 233, 233) !important;
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+  .navbar-nav .nav-item a:hover{
+    color:var(--gradientColor) !important;
+  }
+  .navBar_icons {
+    font-size: 20px !important;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar_icons a{
+    padding: 5px 10px !important;
+  }
+  .navBar_icons a i{
+    font-size: 25px !important;
+  }
+
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 24px;
+    justify-content: center;
+  }
+  
+  .toggler-icon {
+    width: 25px;
+    height: 2px;
+    padding:1.15px;
+    margin:0.5px;
+    background-color:white;
+    transition: all 0.3s ease;
+  }
+  .custom-toggler.open .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .custom-toggler.open .middle-bar {
+    opacity: 0;
+  }
+  
+  .custom-toggler.open .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+
+  .main_body{
+    margin-top:90px !important;
+      
+  }
