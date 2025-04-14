@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body >
-
     
-     <section class="main_body"  >
+    <section class="main_body"  >
+      <div class="overlay" id="stars" style="position: fixed"></div>
       {{-- header start --}}
      <header class="" >
 
@@ -33,7 +33,7 @@
                 <a class="nav-link active text-light" aria-current="page" href="#"><i class='bx bx-home'></i> Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#"><i class='bx bx-user'></i> About</a>
+                <a class="nav-link text-light" href="#footer"><i class='bx bx-user'></i> About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#"><i class='bx bx-slideshow'></i> Projects</a>
@@ -43,7 +43,7 @@
               </li>
               <li class="nav-item navBar_icons" style="padding:0 !important;">
                   <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
-                    <i class='bx bx-git-merge'></i>
+                    <i class='bx bxl-git'></i>
                   </a>
                   <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
                     <i class='bx bxl-linkedin text-primary' ></i>
@@ -64,6 +64,25 @@
      {{-- header End --}}
 
       @yield('main-body')
+
+
+      
+      <footer class="row m-0 d-flex justify-content-between">
+          <div class="col-12 col-md-4 text-center">Designed & Developed by Rohit Patel</div>
+          <div class="col-12 col-md-4 text-center">Copyright@ 2025 Rohit Patel</div>
+          <div class="col-12 col-md-4 d-flex justify-content-center navBar_icons">
+            <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
+              <i class='bx bxl-git'></i>
+            </a>
+            <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
+              <i class='bx bxl-linkedin text-primary' ></i>
+            </a>
+            <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
+              <i class='bx bxl-whatsapp text-success' ></i>
+            </a>
+          </div>
+      </footer>
+
 
     </section>
 

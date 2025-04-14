@@ -1,32 +1,59 @@
 :root {
     
-    --colorPrimary: #E004CD;
-    --colorBlue: #005358;
-    --paraColor: #616161;
-    --colorBlack: #333333a8;
-    --colorWhite: #ffffff80;
-    --ratingColor: #ffc107;
-    --colorYellow: #f2c94c;
-    --gradientColor: rgb(247, 202, 202);
+    --textColor: #E004CD;
+    
     --boxShadow: 0px 6px 60px 5px rgba(0, 0, 0, 0.08);
 }
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+  text-decoration: none;
 
+}
 body{
-    /* background: linear-gradient(to left, #701346 0%, #7ab8da 100%); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* height: 100vh !important; */
-    background-color: var(--gradientColor);
-    /* position: relative; */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background-image: url('../images/hero_background_dark.jpg' ) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     
   }
+  a{
+    cursor: pointer !important;
+  }
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 2s infinite ease-in-out;
+    opacity: 0.2;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.5; }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+
+  /* --------------------- */
 
 header{
     width: 100%;
-    background:var(--colorBlack);
+    /* background:var(--colorBlack); */
+    /* background:#181a27!important; */
+    background-color:  #181a27de !important;
     box-shadow:var(--boxShadow);
     position: fixed;
     top:0px;
@@ -56,7 +83,7 @@ header{
     padding: 5px 10px !important;
   }
   .navBar_icons a i{
-    font-size: 25px !important;
+    font-size: 23px !important;
   }
 
 
@@ -95,4 +122,17 @@ header{
   .main_body{
     margin-top:90px !important;
       
+  }
+
+  footer{
+    background-color: #181a27b0;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;    
+    color:rgb(212, 205, 205);
+
+  }
+  footer i{
+    font-size: 22px;
   }
