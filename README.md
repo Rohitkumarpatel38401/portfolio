@@ -1,7 +1,7 @@
 How to install this project?
 
 1. Download or clone this project.
-2. Create a database with the name laravel-redis
+2. Create a database with the name Portfolio
 3. Open this project in your favorite editor application.
 4. copy file .env.example and rename to .env
 5. Open a terminal and type the following command:
