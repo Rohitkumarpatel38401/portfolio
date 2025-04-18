@@ -21,7 +21,7 @@
             <img class="logo_img m-0" src="images/logo_animated.gif"  alt="" width="100px">
           </a>
           
-          <a class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-toggler custom-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon top-bar"></span>
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
@@ -35,6 +35,7 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="#footer"><i class='bx bx-user'></i> About</a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link text-light" href="#"><i class='bx bx-slideshow'></i> Projects</a>
               </li>
@@ -43,7 +44,8 @@
               </li>
               <li class="nav-item navBar_icons" style="padding:0 !important;">
                   <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
-                    <i class='bx bxl-git'></i>
+                    {{-- <i class='bx bxl-git'></i> --}}
+                    <i class='bx bxl-git bx-tada' style='color:#fdfdfd'  ></i>
                   </a>
                   <a class="nav-link btn btn-outline-dark btn-sm m-0" href="#">
                     <i class='bx bxl-linkedin text-primary' ></i>
@@ -66,7 +68,7 @@
       @yield('main-body')
 
 
-      
+
       <footer class="row m-0 d-flex justify-content-between">
           <div class="col-12 col-md-4 text-center">Designed & Developed by Rohit Patel</div>
           <div class="col-12 col-md-4 text-center">Copyright@ 2025 Rohit Patel</div>

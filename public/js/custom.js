@@ -18,3 +18,21 @@ console.log('custom js added')
     star.style.animationDelay = `${Math.random() * 2}s`;
     starContainer.appendChild(star);
   }
+
+
+  // Load Lottie Animation
+  const script = document.createElement("script");
+  script.src = "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
+  script.onload = () => {
+    const container = document.getElementById('lottie-animation');
+    container.outerHTML = `
+      <lottie-player
+        src="https://assets6.lottiefiles.com/packages/lf20_kkflmtur.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; max-width: 400px;"
+        loop autoplay>
+      </lottie-player>
+    `;
+  };
+  document.body.appendChild(script);
